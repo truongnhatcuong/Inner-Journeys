@@ -47,9 +47,9 @@ const Conscious: React.FC = () => {
               experiences foster depth, trust and embodied connection.
             </p>
             <p>
-              Through guided partner experiences, structured relational processes
-              and integration rituals participants rediscover themselves and each
-              other with intention.
+              Through guided partner experiences, structured relational
+              processes and integration rituals participants rediscover
+              themselves and each other with intention.
             </p>
             <p>
               This is experiential heart intimacy for modern, discerning guests.
@@ -60,7 +60,7 @@ const Conscious: React.FC = () => {
       </div>
 
       {/* Right: Images Column */}
-      <div className="relative z-10 w-full lg:w-[40%] flex items-end justify-center lg:justify-end gap-4 sm:gap-8">
+      <div className="relative ml-10 z-10 w-full lg:w-[40%] flex items-end justify-center lg:justify-end gap-4 sm:gap-8">
         {/* Small image */}
         <div className="relative w-[28%] sm:w-52 lg:w-60 h-55 sm:h-70 lg:h-80 overflow-hidden rounded-sm shrink-0 self-end">
           <Image

@@ -47,14 +47,14 @@ const WeeklyProgram: React.FC = () => {
   return (
     <>
       <div
-        className="relative w-full overflow-hidden px-6 sm:px-12 md:px-20 py-10"
+        className="relative w-full overflow-hidden px-6 sm:px-12 md:px-20 py-20"
         style={{
           backgroundImage: "url('/images/bg4.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-2xl">
           {/* Heading */}
           <FadeIn delay={0} className="relative z-10 mb-8">
             <h2
@@ -101,7 +101,10 @@ const WeeklyProgram: React.FC = () => {
                 >
                   <h3
                     className="text-[21px] sm:text-[24px] font-semibold mb-0.5"
-                    style={{ fontFamily: "'HiguenElage', serif", color: p.titleColor }}
+                    style={{
+                      fontFamily: "'HiguenElage', serif",
+                      color: p.titleColor,
+                    }}
                   >
                     {p.title}
                   </h3>
@@ -132,7 +135,7 @@ const WeeklyProgram: React.FC = () => {
         </div>
       </div>
 
-      <div className="relative w-full h-[100vh] -mt-15">
+      <div className="relative w-full h-[100vh] -mt-15 mb-10">
         <Image
           alt="bannerhome"
           src="/images/banner11.png"

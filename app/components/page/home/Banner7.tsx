@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner7: React.FC = () => {
   return (
-    <div className="relative w-full h-[100vh]">
+    <div className="relative w-full h-[122  vh] ">
       <Image
         src="/images/banner7.png"
         alt="Banner"

@@ -3,7 +3,7 @@ import FadeIn from "../../ui/FadeIn";
 
 const SacredValentine: React.FC = () => {
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-start px-6 -mt-15">
+    <div className="relative w-full h-[125vh] flex flex-col items-center justify-start px-6 -mt-15 ">
       {/* Background image */}
       <Image
         alt="bannerhome"
@@ -35,21 +35,25 @@ const SacredValentine: React.FC = () => {
             <br />
             expression &amp; sharing
             <br />
-            <span style={{ color: "#69418b" }}>...for singles and couples...</span>
+            <span style={{ color: "#69418b" }}>
+              ...for singles and couples...
+            </span>
           </p>
         </FadeIn>
       </div>
 
       {/* Book button */}
-      <FadeIn delay={400} className="absolute bottom-8 z-10">
+      <FadeIn delay={400} className="absolute bottom-15 z-10">
         <a
           href="https://wa.me/"
           target="_blank"
           rel="noopener noreferrer"
           className="block px-8 sm:px-10 py-3 sm:py-4 rounded-full font-bold tracking-widest text-white text-[14px] sm:text-[16px] uppercase"
           style={{
-            background: "linear-gradient(180deg, #9b6fc4 0%, #7a4aab 60%, #6b3fa0 100%)",
-            boxShadow: "0 4px 18px rgba(107,63,160,0.45), inset 0 1px 0 rgba(255,255,255,0.25)",
+            background:
+              "linear-gradient(180deg, #9b6fc4 0%, #7a4aab 60%, #6b3fa0 100%)",
+            boxShadow:
+              "0 4px 18px rgba(107,63,160,0.45), inset 0 1px 0 rgba(255,255,255,0.25)",
             fontFamily: "'DM Sans', sans-serif",
             letterSpacing: "0.12em",
           }}

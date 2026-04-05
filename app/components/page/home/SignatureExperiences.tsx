@@ -31,10 +31,10 @@ const experiences = [
 const SignatureExperiences: React.FC = () => {
   return (
     <div
-      className="relative w-full overflow-hidden px-6 sm:px-12 md:px-20 py-10 md:py-14"
+      className="relative w-full overflow-hidden px-6 sm:px-12 md:px-20 py-10 md:py-12"
       style={{
         backgroundImage: "url('/images/bg2.png')",
-        backgroundSize: "100% auto",
+        backgroundSize: "120% auto",
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
       }}
@@ -63,7 +63,11 @@ const SignatureExperiences: React.FC = () => {
       {/* Cards Grid */}
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-13">
         {experiences.map((exp, i) => (
-          <FadeIn key={exp.title} delay={200 + i * 150} className="flex flex-col">
+          <FadeIn
+            key={exp.title}
+            delay={200 + i * 150}
+            className="flex flex-col"
+          >
             {/* Image */}
             <div className="relative w-full h-[240px] sm:h-[280px] md:h-80 overflow-hidden mb-5">
               <Image
