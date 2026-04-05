@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+
+
+@font-face {
+  font-family: 'Blackstone';
+  src: url('/fonts/BlackStones.otf')  format('opentype');
+  font-weight: lighter;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'HiguenElage';
+  src: url('/fonts/HiguenSerif') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url('/fonts/LeagueSpartan.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ── Scroll-reveal animations ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up-hidden {
+  opacity: 0;
+}
+
+.fade-in-up-visible {
+  animation: fadeInUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+
