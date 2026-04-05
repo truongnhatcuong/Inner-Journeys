@@ -9,7 +9,9 @@ import React from "react";
 const Conscious: React.FC = () => {
   return (
     <div
-      className="relative w-full min-h-screen overflow-hidden flex flex-col lg:flex-row items-center justify-between px-16 py-12 gap-12"
+      className="relative w-full min-h-screen overflow-hidden flex flex-col lg:flex-row items-center justify-between px-16 py-12
+      
+       gap-12"
       style={{
         background:
           "linear-gradient(135deg, #e8e0db 0%, #ede6e0 40%, #e4ddd8 100%)",
